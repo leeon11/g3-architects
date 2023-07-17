@@ -10,19 +10,22 @@
 .btn-primary{
     width: 180px;
     height: 64px;
+    padding: 10px 20px;
     border-radius: 8px;
     background: #FF900E;
     
     color: #FFF;
-    font-size: 20px;
-    font-weight: 600;
+    cursor: pointer;
+    border: 0px;
+    margin-top: 30px;
 }
 
 /* header styles */
 
 header{
     background:  rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 50px 200px;
+    
 }
 nav{
     display: flex;
@@ -31,8 +34,7 @@ nav{
 }
 .nav-title{
     color: #131313;
-    font-size: 45px;
-    font-weight: 700;
+   
 }
 nav > ul{
     display: flex;
@@ -42,8 +44,7 @@ nav > ul{
 nav li{
     list-style: none;
     margin-right:30px ;
-    font-size: 18px;
-    font-weight: 500;
+    
     
 }
 nav li a{
@@ -54,21 +55,55 @@ nav li a{
 /* banner-styles */
 
 .banner-contain{
-    width: 800px;
+    width: 300px;
     text-align: center;
     margin: 0px auto;
 }
 
 .banner-title{
     
-    font-weight: 700;
-    font-size: 64px;
+    
     color: #131313;
 }
 .banner-description{
-    font-size: 16px;
+    
     color: #727272;
-    font-weight: 400;
+    
 }
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+    
+}
+
+/* media queries */
+/* mobile device */
+@media screen and (max-width:675px) {
+    header{
+        padding: 20px;
+        
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav > ul {
+        flex-direction: column;
+    }
+    .banner-description{
+        flex-direction: column;
+    }
+    
+}
+
+/* medium-device */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
 
 
